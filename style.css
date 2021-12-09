@@ -1,0 +1,195 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.tog{
+    color: white;
+    display: none;
+}
+nav{
+    background-color: black;
+}
+   /* youtube link = https://youtu.be/H-AmJSMcNfI */
+nav ul{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+}
+
+nav ul li{
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ;
+    border-radius: 5px;
+}
+
+
+.container{
+    padding: 10px;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.searchName{
+    padding: 3px 2px;
+}
+.inputBox{
+    max-width: 600px;
+    height: 45px;
+    margin: 0px 10px;
+    border: 2px solid black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+#searchBtn{
+    /* background-color: red; */
+      width: 150px;
+      font-size: 1.5rem;
+      /* font-family: 'Fuzzy Bubbles', cursive; */
+      font-family: 'Open Sans', sans-serif;
+}
+
+#clearBtn{
+    margin: 0px 5px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 1.5rem;
+    background-color: red;
+      width: 50px;
+}
+
+
+.newsCards{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 33px;
+}
+.myCard{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.readMoreBtn{
+    background-color: white;
+    color: blue;
+}
+
+
+#toggle{
+    display: none;
+}
+
+ @media  (max-width : 1100px) {
+     /* youtube link = https://youtu.be/H-AmJSMcNfI */
+    #gif1{
+        display: none;
+    }
+    nav ul{
+       flex-direction: column;
+       text-align: center;
+    }
+    .box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .search{
+        flex-direction: column;
+    }
+    .btns{
+        display: flex;
+        justify-content: center;
+    }
+    .inputBox{
+        width: 250px;
+    }
+    .newsCards{
+        margin-top: 20px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        row-gap: 33px;
+    }
+    nav{
+        display: block;
+        border-bottom: 2px solid rgb(199, 57, 57);
+    }
+    nav ul{
+        display: none;
+    }
+    nav ul li {
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+    .tog{
+        display: block;
+        justify-content: right;
+        text-align: right;
+        padding: 5px 25px;
+        font-size: 3rem;
+        cursor: pointer;
+        /* width: 100px; */
+    }
+
+    #toggle:checked ~ ul{
+        display: block;
+    }
+} 
+        
+ 
+
+
+
+
+
+
+
+/* #navBar{
+    background-color: black;
+    list-style: none;
+    padding: 1% 2px;
+    display: flex;
+   
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.navElement{
+    text-decoration: none;
+    padding: 5px 0px;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    width: 400px;
+    margin: 0px 10px;
+
+}
+.navElement:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    transition: 0.3s ;
+} */
